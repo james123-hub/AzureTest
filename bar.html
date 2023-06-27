@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertical Bar Chart</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        .bar {
+            fill: blue;
+        }
+        
+        text {
+            font-family: sans-serif;
+            font-size: 12px;
+            fill: black;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="inputLetters">Enter Letters: </label>
+        <input type="text" id="inputLetters">
+        <button onclick="drawChart()">Draw Chart</button>
+    </div>
+    <svg id="chart"></svg>
+    <script src="app.js"></script>
+</body>
+</html>
